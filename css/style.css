@@ -1,5 +1,5 @@
 *{
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     box-sizing: border-box;
 }
 body {
@@ -18,8 +18,14 @@ body {
     background-color: hsl(0, 0%, 100%);
     width: 100%;
     max-width: 800px;
-    padding: 30px;
-    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    
+    justify-content: center;
+}
+li strong {
+    margin-left: 20px;
+    margin-right: 5px;
 }
 .container{
     width: 100%;
@@ -28,12 +34,17 @@ img{
     border-radius: 12px;
     display: flex;
     width: 100%;
-    height: auto;
+    height: calc(auto + 10%);
+    overflow-clip-margin: content-box;
+    overflow: clip;
 }
-.preparation{
-    background-color: #f0f0f077;
+.preparation {
+    background-color: hsl(330deg 100% 98.04%);
     padding: 10px;
     border-radius: 12px;
+}
+.preparation strong{
+margin-left: 10px;
 }
 h2{
     color: hsl(14.46deg 45.36% 35.88%);
@@ -56,14 +67,30 @@ color: hsl(331.81deg 50.92% 31.96%);
 ul li,ol li{
     color: hsl(14.46deg 45.36% 35.88%);
 }
-tr {
-    display: table-row;
-    vertical-align:bottom;
-    unicode-bidi: isolate;
-    border-color:1px solid #ddd;
+th,td {
+text-align: start;
+border-bottom: 1px solid rgb(223, 223, 223);
 }
 table {
-    border-collapse: separate;
-    text-indent: initial;
+    width: 95%;
     border-spacing: 2px;
+}
+.main_contant .ingredients h2, .main_contant .instruction h2, .main_contant .nutrition h2 {
+ margin-left: -5px;
+ font-size: 1.8rem;
+}
+table ,.nutrition p{
+    margin-left: 25px;
+}
+a{
+    font-size: 16px;
+    margin-left: 5px;
+    pointer-events: none;
+}
+hr{
+    opacity: .3;
+}
+.container{
+    width: 95%;
+    padding-right:30px ;
 }
